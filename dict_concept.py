@@ -7,6 +7,7 @@ x={                       #keys can be tuple can't be list
 }
 print(x,type(x))
 print(x[True])
+
 # adding an element can be done at last
 x[4.55]="kumar"
 x[True]="hello" # to change the values using key

@@ -13,3 +13,10 @@ if not answer:
     answer="NO"
 
 print(answer)
+
+# another approach
+common =set(s1).intersection(set(s2))
+if len(common) >0:
+    print("YES")
+else:
+    print("NO")
