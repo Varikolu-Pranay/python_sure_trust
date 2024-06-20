@@ -23,3 +23,46 @@ def get_full_name(first_name= None,middle_name=None,last_name=None):
     return full_name
     
 
+x=5
+def change():
+    x=3   # this is only in this scope and return is not stored in the function call
+    return x
+print(x)
+
+change()
+print(x)
+
+
+x=5
+def change():
+    global x # this make changes
+    x=3
+    return x
+print(x)
+
+change()
+print(x)
+
+
+x=[1,2,3]
+def change():
+    x.append(5) # if there is no variable declared in local scope it checks in global scope
+change()
+print(x)
+
+
+
+x=[1,2,3]
+def change():
+    x=[]
+    x.append(5) # no change in global variable
+change()
+print(x)
+
+
+x=5
+def change(y):
+    y+=3
+change(x)
+print(x)
+
