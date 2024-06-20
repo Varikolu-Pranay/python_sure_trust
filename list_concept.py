@@ -73,7 +73,8 @@ print(x) # 2 series will be printed
 x=[1,2,3,4,5]+[1,2,3,4,5]
 print(x)
 
-x=input()
+#x=input()
 y=[""]*30
 y.append(x)
 print(y)
+

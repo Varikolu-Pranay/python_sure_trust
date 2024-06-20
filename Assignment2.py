@@ -21,30 +21,9 @@ value=None
 
 for el in unique_x:
     freq=x.count(el)
-    
 
     if( freq>highest_frequency):
         highest_frequency=freq
         value=el
 
 print(f"Mode : {value}")
-
-# Another method for mode 
-# counter={}
-# for el in x:
-#     if el in counter:
-#         counter[el]+=1
-#     else:
-#         counter[el]=1
-
-# print(counter)
-# highest_freq =0
-# mode=[]
-# for el in counter:
-#     if counter[el] > highest_freq:
-#         highest_freq=counter[el]
-#         mode=el
-#     elif counter[el] == highest_freq:
-#         mode.append(el)
-
-
