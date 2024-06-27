@@ -1,21 +1,23 @@
-def add_user(name: str,atten: int,filename):
+def add_user(name: str,atten: int):
+    with open("Attendence.txt","a") as file:
+        file.write(f"\n{name},{atten}")
     
 
+def pop_user(name: str):
+    new_data=[]
+    with open("Attendence.txt","r") as file:
+        old_data=file.read().split("\n")
+        new1=dict(old_data)
+
+    print(new1)
 
 
-
-
-
-
-
-
-
-
-
-
-
-file =open("attendence.txt","x") 
-file.close()
+try:
+    file =open("Attendence.txt","x") 
+    file.close()
+  
+except FileExistsError:
+    pass
 file = open("Attendence.txt","w")
 
     
@@ -28,6 +30,10 @@ attende={
 data=[]
 for key in attende:
     data.append(f"{key},{attende[key]}")
+file.write("\n".join(data))
 
-add_user("pavan",7,file)
+file.close()
+
+add_user("pavan",7)
+pop_user("pranay")
 
