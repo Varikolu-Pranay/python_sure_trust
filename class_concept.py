@@ -7,8 +7,14 @@ class Mobile:
         self.OS=OS
         self.display_size=display_size
         self.benchmark_score=benchmark_score
+    def __str__(self):
+        return f"{self.company} {self.processor}"
     
-IQOO=Mobile("IQOO","snapdragon","50 MP","superamoled","Funtouch OS",15.40,550719)
+
+class Tablet:
+    
+    
+IQOO=Mobile("IQOO Z6 PRO","snapdragon","50 MP","superamoled","Funtouch OS",15.40,550719)
 
 
 print(IQOO.comapny)

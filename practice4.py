@@ -7,9 +7,7 @@ def pop_user(name: str):
     new_data=[]
     with open("Attendence.txt","r") as file:
         old_data=file.read().split("\n")
-        new1=dict(old_data)
-
-    print(new1)
+        
 
 
 try:
